@@ -84,6 +84,23 @@ Exemplo:
 git pull origin main
 ```
 
+## 8) Issues (GitHub)
+As Issues são tarefas, bugs, melhorias ou dúvidas registradas dentro de um repositório no GitHub.
+
+- Servem para organizar o trabalho do projeto.
+- Podem ser usadas para registrar bugs, ideias de funcionalidade ou pendências.
+- Cada issue pode ter título, descrição, labels, responsáveis e status.
+- É uma forma de acompanhar o que precisa ser feito sem misturar com o código.
+
+Exemplo de uso:
+- "Corrigir erro ao cadastrar cliente"
+- "Adicionar filtro por data na tabela"
+- "Melhorar a interface da página inicial"
+
+Dica:
+- Crie uma issue para cada tarefa ou problema.
+- Depois, você pode fechar a issue quando a solução for concluída.
+
 # Passo a passo de uso básico do Git
 
 ## Fluxo simples
@@ -151,5 +168,6 @@ git pull origin main
 - `git merge`: une branches.
 - `git push`: envia para o GitHub/remoto.
 - `git pull`: recebe atualizações do remoto.
+- `Issues`: organiza tarefas, bugs e melhorias no GitHub.
 
 Esse é o fluxo básico do Git usado em projetos de desenvolvimento.
