@@ -14,8 +14,8 @@ Bônus: adicione uma meta e apresente também a porcentagem atingida.
 '''
 
 valor_venda = float(input('Informe o valor da venda em R$: \n-> '))
-meta = float(input('Informe uma meta a ser atingida em R$ \n-> '))
-valor_final = (meta - valor_venda) / 100
+meta = float(input('Informe uma meta a ser atingida em R$: \n-> '))
+porcentagem = (valor_venda/meta) * 100
 
 if valor_venda < 5000 :
     print('Venda Baixa')
@@ -28,4 +28,9 @@ elif valor_venda >= 20000 :
 else :
     print('Valor inválido')
 
-print(f'Conforme sua venda, falta {valor_final}% para alcaçar a meta informada')
+if porcentagem == 100:
+    print('Voce bateu a meta, exatamente 100%')
+elif porcentagem > 100:
+    print(f'Venda: {valor_venda} \nMeta: {meta}\n Voce passou da meta: Passou {porcentagem:.1f - 100}%')
+else :
+    print(f'Venda: {valor_venda} \nMeta: {meta}\nMeta não atingida: falta {100 - porcentagem:.1f}% para atingir a meta')
