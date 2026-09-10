@@ -1,6 +1,16 @@
-# Git: explicação de cada comando e passo a passo
+# Git: comandos e fluxo de trabalho
 
-## 1) git init
+Guia rápido dos comandos mais usados no projeto. Execute os comandos a partir da pasta do repositório.
+
+## Índice
+
+- [Comandos principais](#comandos-principais)
+- [Fluxo básico](#fluxo-básico)
+- [Resumo](#resumo)
+
+## Comandos principais
+
+### `git init`
 Cria um repositório Git dentro da pasta do projeto.
 
 - Serve para iniciar o controle de versão local.
@@ -11,7 +21,7 @@ Exemplo:
 git init
 ```
 
-## 2) git add
+### `git add`
 Adiciona arquivos à área de preparação (staging area), ou seja, marca quais arquivos serão incluídos no próximo commit.
 
 - `git add .` adiciona todos os arquivos da pasta atual.
@@ -22,7 +32,7 @@ Exemplo:
 git add .
 ```
 
-## 3) git commit
+### `git commit`
 Salva as alterações feitas e adicionadas no repositório com uma mensagem descritiva.
 
 - É como criar um "ponto de salvamento" do projeto.
@@ -33,7 +43,7 @@ Exemplo:
 git commit -m "Primeiro commit"
 ```
 
-## 4) git branch
+### `git branch`
 Gerencia ramificações do projeto (branches).
 
 - Permite criar versões diferentes do código ao mesmo tempo.
@@ -50,7 +60,7 @@ git branch feature-nova
 ```
 Cria uma nova branch chamada `feature-nova`.
 
-## 5) git merge
+### `git merge`
 Une alterações de uma branch em outra.
 
 - Normalmente usamos para juntar a branch de desenvolvimento na branch principal.
@@ -62,7 +72,7 @@ git checkout main
 git merge feature-nova
 ```
 
-## 6) git push
+### `git push`
 Envia os commits locais para um repositório remoto, como GitHub.
 
 - Permite compartilhar o projeto com outras pessoas.
@@ -73,7 +83,7 @@ Exemplo:
 git push origin main
 ```
 
-## 7) git pull
+### `git pull`
 Baixa as alterações do repositório remoto para o local.
 
 - Atualiza sua cópia do projeto com o que foi enviado por outras pessoas.
@@ -84,7 +94,7 @@ Exemplo:
 git pull origin main
 ```
 
-## 8) Issues (GitHub)
+### Issues (GitHub)
 As Issues são tarefas, bugs, melhorias ou dúvidas registradas dentro de um repositório no GitHub.
 
 - Servem para organizar o trabalho do projeto.
@@ -101,9 +111,7 @@ Dica:
 - Crie uma issue para cada tarefa ou problema.
 - Depois, você pode fechar a issue quando a solução for concluída.
 
-# Passo a passo de uso básico do Git
-
-## Fluxo simples
+## Fluxo básico
 
 1. Inicializar o repositório:
 ```bash
@@ -159,7 +167,7 @@ git push origin main
 git pull origin main
 ```
 
-# Resumo
+## Resumo
 
 - `git init`: inicia o repositório local.
 - `git add`: prepara arquivos para commit.
